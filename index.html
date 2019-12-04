@@ -5,42 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>InfoEATS</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <h1 class="header__title">
-          info
-          <span class="header__title--green">eats</span>
-        </h1>
+        <div class="header--title">
+          <p class="header--title__small">info</p>
+          <p class="header--title__big">eats</p>
+        </div>
+        <div class="header--main">
+          <div class="header-diasgnosis">
+            Ти знаєш <br />
+            де шукати правду
+          </div>
+          <img
+            class="header-img"
+            src="img/header-img.png"
+            alt="man and computer"
+          />
+        </div>
       </div>
     </header>
+    <!-- features section -->
     <main class="main">
-      <section class="main__quantity quantity">
+      <section class="feature">
         <div class="container">
-          <div class="quantity__block block">
-            <div class="block-circle">
-              <p class="block-info">70</p>
+          <div class="quantity">
+            <div class="quantity-block">
+              <!-- <img class="quantity-img" src="img/trophy.svg" /> -->
+              <!-- <div class="quantity-block-text"> -->
+              <p class="quantity-number">36</p>
+              <p class="quantity-text">Годин<br />читання</p>
+              <!-- </div> -->
             </div>
-            <p class="block-detail">Час, який ти витратив в інтернеті</p>
+            <div class="quantity-block">
+              <!-- <img class="quantity-img" src="img/open-book.svg" /> -->
+              <!-- <div class="quantity-block-text"> -->
+              <p class="quantity-number">52</p>
+              <p class="quantity-text">Відвідано<br />сайтів</p>
+              <!-- </div> -->
+            </div>
+            <div class="quantity-block">
+              <!-- <img class="quantity-img" src="img/desktop.svg" /> -->
+              <!-- <div class="quantity-block-text"> -->
+              <p class="quantity-number">86</p>
+              <p class="quantity-text">Книжкових<br />сторінок</p>
+              <!-- </div> -->
+            </div>
           </div>
-          <div class="quantity__block block">
-            <div class="block-circle">
-              <p class="block-info">1170</p>
+        </div>
+      </section>
+      <!-- statistics of sites -->
+      <section class="sites">
+        <div class="container">
+          <div class="quality">
+            <div class="statistics">
+              <img class="stat-img" src="img/stat1.jpg" />
             </div>
-            <p class="block-detail">Кількість сайтів</p>
+            <div class="stat-description">
+              <img class="description-img" src="img/restaurant.svg" />
+              <p class="description-text">
+                Рівень якості спожитої інформації: це як страви з улюбленого
+                кафе. <br />Все зрозуміло та перевірено часом.
+              </p>
+            </div>
           </div>
-          <div class="quantity__block block">
-            <div class="block-circle">
-              <p class="block-info">360</p>
+        </div>
+      </section>
+      <!-- section with fakes -->
+      <section>
+        <div class="container">
+          <div class="fakes-container">
+            <div class="fakes">
+              <p class="fakes-text">
+                Ми помітили щонайменше 5 фейкових новин, які ти читав<a
+                  href="#"
+                  class="fakes-more"
+                  >...</a
+                ><br />
+                <span class="fakes-example">Наприклад:</span>
+              </p>
+              <div class="fakes-block" 6>
+                <p class="fakes-news">
+                  "В Россию или в тюрьму!" Малофеев парой фраз уничтожил
+                  "живодерский" план для Донбасса
+                </p>
+                <img class="fakes-arrow" src="img/next.svg" />
+                <p class="fakes-wrong">неправда</p>
+                <img class="fakes-arrow" src="img/next.svg" />
+                <a
+                  class="fakes-link"
+                  href="https://www.stopfake.org/ru/fejk-zhitelej-donbassa-ozhidaet-nasilstvennoe-pereselenie-vo-lvov-na-perevospitanie/"
+                  >перевірити</a
+                >
+              </div>
+              <div class="fakes-block">
+                <p class="fakes-news">
+                  Помпео назвал Украину 'проектом США' и оценил ее
+                  перспективность
+                </p>
+                <img class="fakes-arrow" src="img/next.svg" />
+                <p class="fakes-wrong">неправда</p>
+                <img class="fakes-arrow" src="img/next.svg" />
+                <a
+                  class="fakes-link"
+                  href="https://www.stopfake.org/ru/fejk-gossekretar-ssha-majk-pompeo-nazval-ukrainu-amerikanskim-proektom/"
+                  >перевірити</a
+                >
+              </div>
             </div>
-            <p class="block-detail">Прочитаних сторінок</p>
+            <div class="fakes fakes-null">
+              <p class="fakes-text">
+                Ми помітили щонайменше 2 новини з елементами маніпуляцій, з
+                якими ти зіштовхнувся<a href="#" class="fakes-more">...</a>
+                <br />
+                <span class="fakes-example">Наприклад:</span>
+              </p>
+            </div>
+            <div class="fakes fakes-null">
+              <p class="fakes-text">
+                Також помітили щонайменше 6 новин, які містять мову ворожнечі
+                (hate speech)<a href="#" class="fakes-more">...</a>
+                <br />
+                <span class="fakes-example">Наприклад:</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- form section -->
+      <section>
+        <div class="container">
+          <div class="form-section">
+            <form action="#">
+              <p class="form-title">А ти помітив?</p>
+              <br />
+              <div class="form-main">
+                <div class="form-radio">
+                  <input type="radio" id="radio-yes" />
+                  <p class="form-answer">Так</p>
+                </div>
+                <div class="formn-radio">
+                  <input type="radio" id="radio-no" />
+                  <p class="form-answer">Ні</p>
+                </div>
+              </div>
+              <!-- <textarea placeholder="Пишіть Ваші комментарі"></textarea>
+              <br /> -->
+              <button type="submit">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- stat2 section -->
+      <section>
+        <div class="container">
+          <div class="stat2">
+            <img class="stat2-img" src="img/stat2.jpg" />
           </div>
         </div>
       </section>
     </main>
-    <script src="js/index.js"></script>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-all">
+          <p class="footer-text">
+            Дякуємо, що ти хочеш споживати інформацію відповідально.
+            Попереджаємо, що наразі ми можемо перевірити лише частину інформації
+            на предмет фейків та маніпуляцій. Тому будь пильним та розвивай в
+            собі навички критичного мислення.
+          </p>
+          <p class="footer-end">©Zgurtovani za 33, 2019</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
